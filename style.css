@@ -1,0 +1,273 @@
+*{
+    margin:0;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+.left-side{
+    width: 270px;
+    background-color: #f1f1f1;
+    height: 820px;
+    overflow-y: auto; 
+    max-height: 100vh; 
+    position: fixed;
+    left: 17%;
+    border: 0.5px solid #ccc;
+}
+.left-side-header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.rental-price{
+    font-size: 24px;
+    margin:10px 0;
+}
+.left-side-inputs-icon{
+    width: 20px;
+}
+.left-side-input{
+    margin:20px 0;
+    padding: 10px;
+    height: 18px;
+    width:190px;
+    border: 1px solid #ccc;
+}
+.left-side-researching{
+    font-size: 15px;
+    padding: 20px;
+} 
+#search-button{
+    padding: 10px 30px;
+    border: 1px solid ;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+#search-icon{
+  margin-right: 15px;
+}
+#search-button:hover{
+    background-color: #ccc;
+    color: #000;
+   
+}
+.left-side-adds{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.left-side-adds span{
+    padding: 15px 20px;
+}
+
+.left-side-adds span:hover{
+    background-color: #ccc;
+}
+.checkout-invalid-message, .checkin-invalid-message, .name-error-message, .email-error-message, .message-error-message, .modal-error-message{
+     color: red;
+     font-weight: 400;
+     
+}
+/* right-side */
+.right-side{
+    width: 700px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-left: 18%;
+    
+}
+.contact p{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.contact-details i{
+    margin: 5px 10px 5px 0;
+}
+.contact-input{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-input input {
+    margin: 10px 0;
+    padding: 10px;
+    height: 18px;
+    width: 650px;
+    border: 1px solid #ccc;
+}
+#send-message{
+    padding: 10px 30px;
+    border: 1px solid ;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    width: 33%;
+}
+#send-message:hover{
+    background-color: #ccc;
+    color: #000;
+   
+}
+.right-side-header{
+    color: #4CAF50;
+    font-size: 30px;
+    pad: 15px;
+}
+.mini-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.mini-boxes img{
+    width: 164px;
+    height: 90px;
+}
+.main-image{
+    margin: 20px 0 10px 0;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    object-fit: cover;
+    
+}
+.main-text-box{
+    position: absolute;
+    top:22%;
+    left: 35.9%;
+   padding: 16px 10px;
+   background-color: #000;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#livingroomsecond, #bedroom, #diningroom{
+filter: opacity(65%);}
+
+hr{
+    opacity: 20%;
+}
+.thespace, .amenities{
+    display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+.thespace-left-side, .amenities-left-side{
+    display: flex;
+   flex-direction: column;
+   font-size: 18px;
+}
+.thespace-right-side{ 
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.amenities-right-side{
+    margin-right: 38%;
+    display: flex;
+    flex-direction: column;
+}
+.thespace span, .amenities span{
+    padding: 10px;
+}
+.section-headers{
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.credit-carts{
+    gap: 5px;
+    margin:  15px 0;
+}
+#subscribe-button{
+    padding: 10px 30px;
+    border: 1px solid ;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    width: 33%;
+}
+#subscribe-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.subscribe-text{
+    margin: 15px 0;
+}
+.modal{
+    font-family: "Raleway", sans-serif;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 250px;
+    position: fixed;
+    top:15%;
+    left:20% ;
+    background-color: #fff;
+    z-index: 1;
+}
+.close{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.modal input{
+    width: 90%;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    margin-bottom: 30px;
+}
+.modal-header{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.confirm{
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}

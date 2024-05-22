@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playpen+Sans&family=Quicksand&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="left-side-header">
+                <span class="rental-price">Rental</span>
+                <span class="rental-price">from $99</span>
+                <span style="margin-top: 7px;">per night</span>
+            </div>
+           
+           <div class="left-side-researching">
+            <div>
+            <label for="checkin">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                Check in
+            </label>
+            <input  class="left-side-input input" id="checkin" type="date" >
+         </div>
+         <span class="checkin-invalid-message"></span>
+       
+         <div  >
+            <label for="checkout">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                Check out
+            </label>
+            <input   class="left-side-input input" id="checkout" type="date"  >
+         </div>
+         <span class="checkout-invalid-message"></span>
+
+         <div  >
+            <label for="adult">
+               <i  class="fa-solid fa-person" aria-hidden="true"> </i>
+               Adults
+            </label>
+            <input  class="left-side-input input" id="adult" type="number" min="1" placeholder="1">
+         </div>
+
+         <div  >
+            <label for="kids">
+            <i  class="fa-solid fa-child-reaching" aria-hidden="true"></i>
+            Kids
+           </label>
+            <input   class="left-side-input input" id="kids" type="number" min="0" placeholder="0"></div>
+         </div>
+         <button id="search-button" >
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            Search availability
+         </button>
+         <div class="left-side-adds">
+            <span><i class="fa-solid fa-building"></i> Apartment</span>
+            <span><i class="fa-solid fa-rss"></i> Subscribe</span>
+            <span><i class="fa-solid fa-envelope"></i> Contact</span>
+         </div>
+        </div>
+
+<!-- right-side -->
+
+        <div class="right-side">
+            <div class="right-side-header">The Apartment</div>
+             <div class="carusel">
+                <img class="main-image" src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom.jpg" alt="#">
+                <p class="main-text-box">Living Room</p>
+             </div>
+
+             <div class="mini-boxes">
+                <img id="livingroom" class="mini-image" src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom.jpg" alt="">
+                <img id="diningroom" class="mini-image" src="https://gurbangurbanzade.github.io/Apartment-Websites/image/diningroom.jpg" alt="">
+                <img id="bedroom" class="mini-image" src="https://gurbangurbanzade.github.io/Apartment-Websites/image/bedroom.jpg" alt="">
+                <img id="livingroomsecond" class="mini-image" src="https://gurbangurbanzade.github.io/Apartment-Websites/image/livingroom2.jpg" alt="">
+            </div>
+
+            <p class="section-headers">The Space</p>
+            <section class="thespace">
+                <div class="thespace-left-side">
+                    <span><i  class="fa-solid fa-person" aria-hidden="true"> </i> Max People: 4</span>
+                    <span><i class="fa-solid fa-bath"></i> Bathroom: 2</span>
+                    <span><i class="fa-solid fa-bed"></i> Bedroom: 1</span>
+                </div>
+                <div class="thespace-right-side">
+                    <span><i class="fa-regular fa-clock"></i> Check In: After 3PM</span>
+                    <span><i class="fa-regular fa-clock"></i> Check Out: 12PM</span>
+                </div>
+            </section>
+            <hr>
+            <p class="section-headers">Amenities</p>
+            <section class="amenities">
+                <div class="amenities-left-side">
+                    <span><i class="fa-solid fa-shower"></i> Shower</span>
+                    <span><i class="fa-solid fa-wifi"></i> WIFI</span>
+                    <span><i class="fa-solid fa-tv"></i> TV</span>
+                </div>
+                <div class="amenities-right-side">
+                    <span><i class="fa-solid fa-utensils"></i> Kitchen</span>
+                    <span><i class="fa-solid fa-temperature-three-quarters"></i></i> Heating</span>
+                    <span><i class="fa-solid fa-wheelchair"></i> Accessible</span>
+                </div>
+            </section>
+
+            <hr>
+         
+            <section>
+                <p class="section-headers">Extra Info</p>
+                <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="credit-carts">We accept: 
+                        <i class="fa-solid fa-credit-card"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+            </section>
+
+            <hr>
+            <section>
+                <p class="section-headers">Rules</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="subscribe-text">Subscribe to receive updates on available dates and special offers.</p>
+                <button onclick="subscribe()" id="subscribe-button">Subscribe</button>
+            </section>
+            
+            <div class="modal">
+                <p class="modal-header">SUBSCRIBE</p>
+                <p>Join our mailing list to receive updates on available dates and special offers.</p>
+                <input  class="input" type="email" id="email-input" placeholder="Enter a mail">
+                <span class="modal-error-message"></span>
+                <button onclick="confirmFunction()" class="confirm">Subscribe</button>
+                <button onclick="closeModal()" class="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <hr>
+
+            <section class="contact">
+                <p>Contact</p>
+                <div class="contact-details">
+                    <span><i class="fa-solid fa-location-dot"></i>  Chicago, US</span>
+                    <span><i class="fa-solid fa-phone"></i>  Phone: +00 151515</span>
+                    <span><i class="fa-solid fa-envelope"></i>  Email: mail@mail.com</span>
+                </div>
+                <span>Questions? Go ahead, ask them:</span>
+                <div class="contact-input">
+                    <input  class="input" type="text" id="name" placeholder="Name">
+                    <span  class="name-error-message"></span>
+                    <input  class="input" type="text" id="email" placeholder="Email">
+                    <span class="email-error-message"></span>
+                    <input  class="input" type="text" id="message" placeholder="Message">
+                    <span class="message-error-message"></span>
+                </div>
+                <button id="send-message">Send a Message</button>
+            </section>
+            <p>  Powered by <a style="color: black;" href="#"> Gurban Gurbanzade</a></p>
+          
+        </div>
+  
+     
+    </div>
+<script src="https://kit.fontawesome.com/f1c0c87b9c.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
