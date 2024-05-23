@@ -533,20 +533,32 @@ hr{
     width: 96%;
 }
 .main-text-box{
-    left:2.7%;
-    top: 21.6%;
+    left:5%;
+    top: 8%;
 }
 .main-image{
+    height: 50%;
     width: 100%;
 }
 #livingroom, #livingroomsecond, #bedroom, #diningroom{
-   width: 23%}
+   width: 21%;
+  height: 40%;}
    
    #name, #email, #message{
     width:90%;
    }
    .left-side-researching{
     font-size: 15px;
-    
+ 
 } 
+.modal{
+    width: 250px;
+    height: 300px;
+    margin-left: 0;
+    left: 8%;
+}
+.close-bar{
+    left: 60%;
+    top: 3%;
+}
 }
