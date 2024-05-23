@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         checkInInvalidMessage.innerHTML = "";
         checkOutInvalidMessage.innerHTML = "";
 
-        if (checkinDate <= today ) {
+        if (checkinDate <= today ||  !checkinDate) {
             checkInInvalidMessage.innerHTML = "Format is not valid";
            
         }
 
-        if (checkoutDate <= checkinDate || checkoutDate <= today ) {
+        if (checkoutDate <= checkinDate || checkoutDate <= today || !checkoutDate ) {
             checkOutInvalidMessage.innerHTML = "Format is not valid";
            
         }
@@ -93,30 +93,36 @@ document.getElementById('send-message').addEventListener('click', function() {
     emailErrorMessage.innerHTML = "";
     messageErrorMessage.innerHTML = "";
 
+    let isValid = true;
+
     if (!name) {
-        nameErrorMessage.innerHTML = "Format is not valid";
+        nameErrorMessage.innerHTML = "Name cannot be empty";
+        isValid = false;
     }
     if (!email) {
-        emailErrorMessage.innerHTML = "Format is not valid";
+        emailErrorMessage.innerHTML = "Email cannot be empty";
+        isValid = false;
     }
     if (!message) {
-        messageErrorMessage.innerHTML = "Format is not valid";
+        messageErrorMessage.innerHTML = "Message cannot be empty";
+        isValid = false;
     }
 
-    if (name && email && message) {
+    if (isValid) {
         const data = {
             name: name,
             email: email,
             message: message
         };
 
-        fetch('./contact', {
-            method: 'PUT',
+        fetch('https://664eecc0fafad45dfae18c66.mockapi.io/MESSAGE', {
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         })
+        .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
         })
@@ -161,8 +167,14 @@ function confirmFunction() {
 }
 
 let hamburger = document.getElementById('hamburger')
-livingRoom.addEventListener("click", hamburgerEvent);
+let closeElem =  document.querySelector('.close-bar');
+hamburger.addEventListener("click", hamburgerEvent);
 
 function hamburgerEvent() {
    leftSide.style.display = 'flex'
+   closeElem.style.display = 'flex'
+}
+function closeBar() {
+    leftSide.style.display = 'none'
+    closeElem.style.display = 'none'
 }
