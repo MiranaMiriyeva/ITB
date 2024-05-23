@@ -159,3 +159,10 @@ function confirmFunction() {
         modalErrorMessage.innerHTML = 'Email is not valid';
     }
 }
+
+let hamburger = document.getElementById('hamburger')
+livingRoom.addEventListener("click", hamburgerEvent);
+
+function hamburgerEvent() {
+   leftSide.style.display = 'flex'
+}

@@ -1,13 +1,12 @@
 *{
     margin:0;
- 
 }
-
 .container{
     display: flex;
-    justify-content: center;
     font-family: "Raleway", sans-serif;
+    max-width: 1550px;
     position: relative;
+    margin-left: 16rem;
 }
 .left-side{
     width: 270px;
@@ -16,8 +15,8 @@
     overflow-y: auto; 
     max-height: 100vh; 
     position: fixed;
-    left: 17%;
     border: 0.5px solid #ccc;
+    z-index: 0;
 }
 .left-side-header{
     padding: 20px;
@@ -85,11 +84,10 @@
 }
 /* right-side */
 .right-side{
-    width: 700px;
-    padding: 15px;
+    width: 730px;
+    padding: 15px ;
     border: 1px solid #ccc;
-    margin-left: 18%;
-    
+    margin-left: 21%;
 }
 .contact p{
     font-size: 30px;
@@ -158,8 +156,8 @@
 }
 .main-text-box{
     position: absolute;
-    top:22%;
-    left: 35.9%;
+    top:21.5%;
+    left: 22.2%;
    padding: 16px 10px;
    background-color: #000;
    color: #fff;
@@ -167,8 +165,15 @@
    align-items: center;
    justify-content: center;
 }
+
+
 #livingroomsecond, #bedroom, #diningroom{
 filter: opacity(65%);}
+
+#livingroom:hover, #livingroomsecond:hover, #bedroom:hover, #diningroom:hover{
+    filter: opacity(100%) !important;
+    cursor: pointer;
+}
 
 hr{
     opacity: 20%;
@@ -270,4 +275,48 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     border: none;
+}
+.mobile-navbar{
+    position: absolute;
+    top: 0;
+    width: 500px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+/* @media (min-width: 1550px) and (max-width: 2500px){
+    .container {
+        margin-left: 20%;
+    }
+}
+@media  (min-width: 2500px){
+    .container {
+        margin-left: 30%;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1550px){
+    .container {
+        margin-left: 1%;
+    }
+}
+@media (min-width: 560px) and (max-width:1000px){
+    .container {
+        max-width: 1000px;
+        margin-left: 0;
+    }
+} */
+@media  (max-width: 560px){
+   .container {
+    margin-left: 0;
+    max-width: 300px;
+}
+.left-side{
+    display: none;
+}
+.mobile-navbar{
+    display: flex;
+}
 }
